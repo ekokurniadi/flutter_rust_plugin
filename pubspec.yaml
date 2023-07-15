@@ -1,0 +1,28 @@
+name: flutter_rust
+description: A new Flutter plugin project.
+version: 0.0.1
+homepage: github.com/ekokurniadi
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+  flutter: ">=2.5.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+  ffi: ^2.0.1
+  flutter_rust_bridge: 1.59.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  ffigen: ^7.2.4
+
+flutter:
+  
+  plugin:
+    platforms:
+      windows:
+        pluginClass: FlutterRustPluginCApi
