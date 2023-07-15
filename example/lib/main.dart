@@ -67,7 +67,7 @@ class _MyAppState extends State<MyApp> {
           onPressed: () async {
             await streamBluetooth();
           },
-          child: Text('Scan'),
+          child: const Text('Scan'),
         ),
       ),
     );
