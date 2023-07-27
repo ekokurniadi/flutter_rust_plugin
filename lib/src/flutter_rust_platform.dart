@@ -55,4 +55,10 @@ class FlutterRustPlugin {
       imagePath: imagePath,
     );
   }
+
+  Future<String> invokeMethod({
+    required MethodChannel channel,
+  }) async {
+    return await RustLib.instance.invokeMethod(channel: channel);
+  }
 }
